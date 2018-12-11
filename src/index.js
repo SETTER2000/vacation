@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import React from 'react'
+import { render } from 'react-dom'
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+
+import Menu from './components/Menu'
+import data from './data/recipes'
+window.React = React;
+render(
+    <Menu recipes={data} />,
+    document.getElementById("root")
 );
